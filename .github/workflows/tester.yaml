@@ -16,19 +16,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip pytest
           pip install coverage                            
-
-      - name: Install spotipy
-        run: sudo pip3 install spotipy
-
-      - name: Install requests
-       run: sudo pip3 install requests
-
-      - name: Install pandas
-       run: sudo pip3 install pandas
-
-      - name: Install sqlalchemy
-       run: sudo pip3 install sqlalchemy
-
+          pip install spotipy
+          pip install requests
+          pip install sqlalchemy
+          pip install pandas
+       
       - name: Test with unittest
         run: python3 -m unittest spotTest.py
        
