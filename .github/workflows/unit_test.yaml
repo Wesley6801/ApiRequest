@@ -19,14 +19,14 @@ jobs:
         run: sudo pip3 install spotipy
 
       - name: Install requests
-       run: sudo pip3 install requests
+        run: sudo pip3 install requests
 
       - name: Install pandas
-       run: sudo pip3 install pandas
+        run: sudo pip3 install pandas
 
       - name: Install sqlalchemy
-       run: sudo pip3 install sqlalchemy
+        run: sudo pip3 install sqlalchemy
 
       - name: Test with unittest
         run: |
-          python3 -m unittest test.py
+          python3 -m unittest spoTest.py

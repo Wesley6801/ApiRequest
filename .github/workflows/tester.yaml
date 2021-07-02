@@ -30,13 +30,13 @@ jobs:
        run: sudo pip3 install sqlalchemy
 
       - name: Test with unittest
-        run: python3 -m unittest test.py
+        run: python3 -m unittest spotTest.py
        
        #add your code below this line
      
      - name: Check code coverage                        #new from here down
         run: |
-          python3 -m coverage run -m unittest test.py
+          python3 -m coverage run -m unittest spotTest.py
           python3 -m coverage report
           python3 -m coverage html
           
