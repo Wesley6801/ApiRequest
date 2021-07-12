@@ -15,11 +15,11 @@ jobs:
       - name: Install tools
         run: |
           python -m pip install --upgrade pip pytest
-          pip install coverage                            
-          pip install spotipy
-          pip install requests
-          pip install sqlalchemy
-          pip install pandas
+          pip3 install coverage                            
+          pip3 install spotipy
+          pip3 install requests
+          pip3 install sqlalchemy
+          pip3 install pandas
        
       - name: Test with unittest
         run: python3 -m unittest spotTest.py
