@@ -1,5 +1,4 @@
 import unittest
-import spotipy
 from spotify import return_response, gatherNames, gatherDates 
 
 
