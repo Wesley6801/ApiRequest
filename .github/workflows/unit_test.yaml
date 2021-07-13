@@ -22,4 +22,4 @@ jobs:
 
       - name: Test with unittest
         run: |
-          python3 -m unittest spotTest.py
+          python3 spotTest.py
