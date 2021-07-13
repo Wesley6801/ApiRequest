@@ -15,10 +15,10 @@ jobs:
       - name: Install tools
         run: |
           python -m pip install --upgrade pip pytest
-          sudo pip3 install spotipy
-          sudo pip3 install requests
-          sudo pip3 install pandas
-          sudo pip3 install sqlalchemy
+          pip3 install spotipy
+          pip3 install requests
+          pip3 install pandas
+          pip3 install sqlalchemy
 
       - name: Test with unittest
         run: |
